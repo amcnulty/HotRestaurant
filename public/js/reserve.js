@@ -21,7 +21,8 @@ YTK.reserve = (function() {
     console.log('asdfasdf');
     var $revBtn = $('.reservation-btn', '.reserve-page');
 
-    $revBtn.on('click', function() {
+    $revBtn.on('click', function(e) {
+      e.preventDefault();
       var formObj = grabFormData();
 
       // push to API
