@@ -16,7 +16,9 @@ YTK.reserve = (function() {
       uid   : $uniqueID.val() || ''
     };
   },
+  //TODO: add error checking
   setupSubmit = function() {
+    console.log('asdfasdf');
     var $revBtn = $('.reservation-btn', '.reserve-page');
 
     $revBtn.on('click', function() {
