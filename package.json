@@ -1,0 +1,32 @@
+{
+  "name": "hotrestaurant",
+  "version": "1.0.0",
+  "description": "A node/express based web app for handling reservation requests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amcnulty/HotRestaurant.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "restaurant",
+    "reservations"
+  ],
+  "author": "El Papi Errni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amcnulty/HotRestaurant/issues"
+  },
+  "homepage": "https://github.com/amcnulty/HotRestaurant#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.4.5"
+  }
+}
