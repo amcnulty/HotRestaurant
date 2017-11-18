@@ -58,7 +58,7 @@ YTK.reserve = (function($) {
 
       if (!$.isEmptyObject(formObj)) {
         // push to API
-        $.post("/api/new", formObj)
+        $.post("/api/resveration", formObj)
         .done(function(data) {
           console.log(data);
           if (true) {
