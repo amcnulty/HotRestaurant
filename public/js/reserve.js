@@ -58,16 +58,34 @@ YTK.reserve = (function($) {
 
       if (!$.isEmptyObject(formObj)) {
         // push to API
-        $.post("/api/resveration", formObj)
-        .done(function(data) {
-          console.log(data);
-          if (true) {
-            alert("Your Reservation is on there");
-          }
-          else {
-            alert("Your Reservation is on the waiting list");  
-          }
-        });
+        //console.log('hey', formObj);
+        // $.post("/api/reservation", function(formObj) {
+        //   console.log('kao', formObj);
+        //   console.log('shit sent', formObj);
+        // })
+        // .done(function(data) {
+        //   console.log(data);
+        //   if (true) {
+        //     alert("Your Reservation is on there");
+        //   }
+        //   else {
+        //     alert("Your Reservation is on the waiting list");  
+        //   }
+        // });
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "/api/reservation", true);
+        xhr.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+              console.log('all good');
+            }
+            else if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 404) {
+              console.log('all bad');
+            }
+        }
+        // Create json here
+        // var json = new Object();
+        xhr.send(JSON.stringify(formObj));
       }
       
     });
