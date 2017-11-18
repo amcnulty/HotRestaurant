@@ -1,0 +1,43 @@
+* {
+
+}
+.main-jumbotron {
+  text-align: center;
+}
+
+.reserve-main label {
+  font-weight: bold;
+  display: bold;
+  margin: 10px 0;
+}
+
+.reserve-main .card-block {
+  padding: 10px;
+}
+
+.reserve-main input {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.reserve-main .reservation-btn {
+  margin: 15px 0;
+}
+
+.api-links {
+  margin: 15px 0;
+  padding: 0 30px;
+}
+
+.view-table-btn .fa {
+  padding-right: 5px;
+}
+
+.left{
+  text-align: left;
+}
+
+.card{
+  margin-bottom: 15px;
+}
