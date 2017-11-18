@@ -1,6 +1,8 @@
-* {
 
+.btn {
+  cursor: pointer;
 }
+
 .main-jumbotron {
   text-align: center;
 }
