@@ -1,7 +1,7 @@
 //TODO: Night king army++ as defender died
 var YTK = YTK || {};
 
-YTK.reserve = (function() {
+YTK.reserve = (function($) {
   var 
   grabFormData = function() {
     var $name   = $('.name', '.reserve-page'),
@@ -18,7 +18,6 @@ YTK.reserve = (function() {
   },
   //TODO: add error checking
   setupSubmit = function() {
-    console.log('asdfasdf');
     var $revBtn = $('.reservation-btn', '.reserve-page');
 
     $revBtn.on('click', function(e) {
@@ -45,7 +44,7 @@ YTK.reserve = (function() {
 return {
     initPage : initPage
   }
-})();
+})(jQuery);
 
 $(function() {
   YTK.reserve.initPage();
