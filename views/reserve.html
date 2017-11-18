@@ -1,9 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Reservations</title>
-</head>
-<body>
-	<h1>This is the reservation page.</h1>
-</body>
-</html>
+  <head>
+    <title>Reservation Page</title>
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Make a reservation with us" />
+    <meta property="og:description" content="Toy full stack app" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="../public/res/images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/res/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/reserve.css">
+  </head>
+
+  <body class="reserve-page">
+
+  <div class="container main-container">
+    <div class="jumbotron main-jumbotron">
+      <h1><i class="fa fa-fire" aria-hidden="true"></i>Hot Restaurant</h1>
+      <hr/>
+      <h3>Make your reservation</h3>
+      <div class="btn-row">
+        <button type="button" class="btn btn-primary view-table-btn">
+          <i class="fa fa-list-alt" aria-hidden="true"></i>View Tables</button>
+        <button type="button" class="btn">
+          <i class="fa fa-home" aria-hidden="true"></i></button>
+      </div>
+    </div>
+      
+    <div class="card reserve-main">
+      <div class="card-header">
+        Table Reservation
+      </div>
+      <div class="card-block">
+        <div class="input-row">
+          <label>Name</label>
+          <input class="name" name="name">
+        </div>
+        <div class="input-row">
+          <label>Phone</label>
+          <input class="phone" name="phone">
+        </div>
+        <div class="input-row">
+          <label>Email</label>
+          <input class="email" name="email">
+        </div>
+        <div class="input-row">  
+          <label>Unique ID</label>
+          <input class="unique-id" name="unique-id">
+        </div>
+        <a href="#" class="btn btn-primary reservation-btn">Submit</a>
+      </div>
+    </div>
+
+    <div class="api-links">
+      <a href="#">API Table Link</a> | <a href="#">API Wait List</a>
+    </div>
+  </div>
+  
+  
+  
+  
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="assets/javascripts/reserve.js"></script>
+  </body>
+  </html>
