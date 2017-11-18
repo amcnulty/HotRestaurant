@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 require('dotenv').config();
 
 var pageRoutes = require('./roots/pageroutes');
+var reservations = require('./api/reservations');
 
 var app = express();
 
@@ -13,6 +14,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname + '/public')));
 
 app.use('/', pageRoutes);
+app.use('/api', reservations);
 
 app.get('/', function(req, res) {
 	res.sendFile(__dirname + '/views/home.html')
