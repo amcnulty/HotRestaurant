@@ -3,6 +3,12 @@
   cursor: pointer;
 }
 
+span.warning {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
 .main-jumbotron {
   text-align: center;
 }
